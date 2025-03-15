@@ -90,6 +90,9 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
+    - name: rm
+      run: cd openwrt &&  rm -rf ./feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
+      
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
@@ -184,4 +187,4 @@ jobs:
         keep_latest: 3
         delete_tags: true
       env:
-       GITHUB_TOKEN: ${{ secrets.OPTOKEN }}
+       GITHUB_TOKEN: ${{ secrets.OP_TOKEN }}
