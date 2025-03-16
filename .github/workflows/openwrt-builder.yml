@@ -113,7 +113,7 @@ jobs:
       with:
         ccache: 'true'
         mixkey: 'x86-64'
-        prefix: /workdir/openwrt/cache
+        prefix: /workdir
         
     - name: Download package
       id: package
