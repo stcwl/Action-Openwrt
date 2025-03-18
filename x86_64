@@ -1265,7 +1265,7 @@ CONFIG_RUST_SCCACHE_DIR=""
 #
 CONFIG_PACKAGE_libbz2=y
 CONFIG_PACKAGE_liblzma=y
-CONFIG_PACKAGE_libqatzip=y
+# CONFIG_PACKAGE_libqatzip=y
 CONFIG_PACKAGE_libzstd=y
 CONFIG_ZSTD_OPTIMIZE_O3=y
 # end of Compression
